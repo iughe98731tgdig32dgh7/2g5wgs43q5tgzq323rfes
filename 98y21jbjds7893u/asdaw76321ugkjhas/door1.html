@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>Porte 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/Door/eyes/closedeye.png">
+</head>
+<body>
+    <div class="ImagesDoor1">
+
+        <img src="/eyesCode/3eye.png" width="300">
+
+        <img src="/eyesCode/1eye.jpg" width="300">
+
+        <img src="/eyesCode/4eye.jpg" width="300">
+
+    </div>
+
+    <div>
+        <a href="Door1Lock.html">
+            <img id="CadenasFermer" src="/Vectors/LockClosed.jpg" width="200">
+
+            <img id="CadenasOuvert" src="/Vectors/LockOpen.jpg" width="200">
+        </a>
+    </div>
+
+    <style>
+        #CadenasFermer {
+            display: inline-block;
+        }
+        
+        #CadenasOuvert {
+            display: none;
+        }
+        
+        #CadenasFermer:hover {
+            display: none;
+        }
+        
+        #CadenasOuvert:hover {
+            display: inline-block;
+        }
+        
+        div {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        var fermerImage = document.getElementById("CadenasFermer");
+        var ouvertImage = document.getElementById("CadenasOuvert");
+
+        fermerImage.addEventListener("mouseover", function() {
+            fermerImage.style.display = "none";
+            ouvertImage.style.display = "inline-block";
+        });
+
+        ouvertImage.addEventListener("mouseleave", function() {
+            fermerImage.style.display = "inline-block";
+            ouvertImage.style.display = "none";
+        });
+    </script>
+
+</body>
+</html>

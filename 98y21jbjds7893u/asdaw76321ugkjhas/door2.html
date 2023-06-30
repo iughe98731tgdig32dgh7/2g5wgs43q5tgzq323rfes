@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>Porte 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/Door/eyes/closedeye.png">
+</head>
+<body>
+
+    <div class="ImagesDoor2">
+
+        <img src="/Door/eyes/eye2.jpg" height="400">
+
+    </div>
+
+
+    <div id="door2div">
+        <input id="door2input">
+    </div>
+
+    <div id="entrersubmit">
+        <a href="#" onclick="checkNumbers()">
+            <img src="/Vectors/arrow.jpg" height="100px">
+        </a>
+
+        <script>
+            function checkNumbers() {
+                var numberX = parseInt(document.getElementById("door2input").value);
+                
+                if (numberX === 123123) {
+                    window.location.href = "door2unlocked.html";
+                } else {
+                    window.location.href = "MainHallway.html";
+                }
+            }
+        </script>
+    </div>
+
+</body>
+</html>

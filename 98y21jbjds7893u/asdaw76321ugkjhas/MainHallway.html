@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <title>-</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/Door/eyes/closedeye.png">
+</head>
+<body>
+
+    <div class="Doors">
+        <a href="door1.html" class="door-link">
+            <img id="door1" src="/Door/door1.png">
+            <img id="Door1Open" src="/Door/door1open.png">
+        </a>
+        <a href="door2.html" class="door-link">
+            <img id="door2" src="/Door/door2.png">
+            <img id="Door2Open" src="/Door/door2open.png">
+        </a>
+        <a href="door4.html" class="door-link">
+            <img id="door4" src="/Door/door4.png">
+            <img id="Door4Open" src="/Door/door4open.png">
+        </a>
+    </div>
+
+        <style>
+            .Doors a {
+                text-decoration: none;
+            }
+            .Doors {
+                display: flex;
+                justify-content: center;
+            }
+            .Doors img {
+                align-self: center;
+            }
+        </style>
+        
+    </div>
+
+    <div class="ClosedDoor">
+        <a href="door5.html" class="door-link5">
+            <img id="door5" src="/Door/door5.png">
+            <img id="Door5Open" src="/Door/door5open.png">
+        </a>
+        <style>
+            .ClosedDoor a {
+                text-decoration: none;
+            }
+    
+            .ClosedDoor {
+                display: flex;
+                justify-content: center;
+                position: relative;
+            }
+    
+            .ClosedDoor img {
+                align-self: center;
+            }
+    
+            #Door5Open {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                z-index: 1;
+            }
+    
+            .door-link5:hover #Door5Open {
+                opacity: 1;
+            }
+        </style>
+    </div>
+
+    <!-- Eyes everywhere... Serait mieux de faire un background animé
+        <div>
+        <img id="eye1" src="/BgEyes/0001-0300_1.gif" height="100">
+
+        <style>
+            #eye1 {
+              position: absolute;
+              top: 40em;
+              left: 30em;
+              z-index: 1;
+            }
+          </style>
+
+    </div>
+     -->
+
+</body>
+</html>

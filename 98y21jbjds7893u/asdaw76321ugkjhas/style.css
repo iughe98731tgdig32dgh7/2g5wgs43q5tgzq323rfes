@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Orbit;
+    src: url(/font/Orbit-Regular.ttf);
+}
+
+body {
+    background-color: black;
+}
+
+.Doors {
+    display: flex;
+    justify-content: center;
+}
+
+.Doors img {
+    align-self: center;
+    margin: 3em;
+    border-radius: 2.5em;
+}
+
+.ImagesDoor1 {
+    display: flex;
+    justify-content: center;
+}
+
+.ImagesDoor1 img {
+    align-self: center;
+    margin: 5em;
+    border-radius: 2.5em;
+}
+
+.door-link {
+    position: relative;
+}
+
+#Door1Open,
+#Door2Open,
+#Door3Open,
+#Door4Open {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#Door1Open,
+#Door2Open,
+#Door3Open,
+#Door4Open,
+#Door5Open img {
+    border-radius: 1em;
+}
+
+.door-link:hover #Door1Open,
+.door-link:hover #Door2Open,
+.door-link:hover #Door3Open,
+.door-link:hover #Door4Open {
+    opacity: 1;
+}
+
+#door5{
+    border-radius: 2.5em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+#entrer1,
+#entrer2,
+#entrer3 {
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: Orbit;
+}
+
+#entrersubmit {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#mapdiv {
+    display: flex;
+    justify-content: center;
+}
+
+#map {
+    align-self: center;
+    margin-top: 10px;
+    border-radius: 2.5em;
+}
+
+#door2div {
+    display: flex;
+    justify-content: center;
+}
+
+#door2input {
+    margin-top: 5%;
+    width: 25%;
+    height: 100%;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 50px;
+    font-family: Orbit;
+}
+
+.ImagesDoor2 {
+    display: flex;
+    justify-content: center;
+}
+
+.ImagesDoor2 img {
+    align-self: center;
+    margin: 2em;
+    border-radius: 2.5em;
+}
